@@ -1,0 +1,23 @@
+img {
+    display: block;
+    width: 350px;
+}
+
+.card {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* large desktop  */
+@media (min-width: 992px) and (max-width: 119.98) {
+
+}
+
+
+/* extra large device  */
+@media (min-width: 1200px) {
+
+}
+
