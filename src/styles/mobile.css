@@ -7,8 +7,9 @@
     }
 
     .container {
-        padding: 0;
-        margin: 0;
+        display: grid;
+        padding: 5%;
+        grid-template-columns: 1fr;
     }
 
     .img-fluid {
@@ -23,8 +24,9 @@
     }
 
     .container {
-        padding: 0;
-        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5%;
     }
 
     .img-fluid {
@@ -37,13 +39,14 @@
         color: yellow;
     }
 
-    .container {
-        padding: 0;
-        margin: 0;
-    }
-
     .img-fluid {
         width: 100%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5%;
     }
 }
 

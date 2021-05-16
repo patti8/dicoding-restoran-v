@@ -1,6 +1,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/mobile.css';
+import '../scripts/navbar';
 
 // data restaurant
 import ('../DATA.json').then(({default: jsonData}) => {
@@ -21,4 +22,6 @@ import ('../DATA.json').then(({default: jsonData}) => {
     document.querySelector('#myResto').innerHTML = dataList;
 });
 
-console.log('Hello Coders! :)');
+// tutup navbar 
+
+// console.log('Hello Coders! :)');
