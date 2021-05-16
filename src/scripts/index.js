@@ -13,7 +13,7 @@ import ('../DATA.json').then(({default: jsonData}) => {
             <img class="img-fluid" src="${data['pictureId']}" alt="${data['name']}" title="${data['name']}" />
             <div>${data['city']}</div>
             <a href="#">${data['rating']}</a>
-            <div class="text-primary">${data['description']}</div>
+            <div class="text-primary">${data['description'].slice(0,150)}...</div>
         </div>
         `
         

@@ -1,6 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 15%;
+}
+
 img {
     display: block;
-    width: 350px;
+    width: 100%;
 }
 
 .card {
@@ -11,13 +20,37 @@ img {
 
 
 /* large desktop  */
-@media (min-width: 992px) and (max-width: 119.98) {
+/* @media (min-width: 992px) and (max-width: 119.98px) { */
+@media (min-width: 992px) and (max-width: 1119.98px) {
+    html, body {
+        color: blue;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100px 200px;
+    }
 
+    img {
+        display: none;
+    }
+
+    .text-primary {
+        display: none;
+    }
 }
-
+    
 
 /* extra large device  */
 @media (min-width: 1200px) {
+    html, body {
+        /* color: yellow; */
+    }
 
+    .container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        /* grid-template-rows: 100px 100px; */
+    }
 }
 
