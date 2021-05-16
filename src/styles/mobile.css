@@ -1,6 +1,7 @@
 /* responsive apps by Tendy Rivaldo */
 
-/* extra small size */
+
+/* --------------------- extra small size ------------------------------- */
 @media (max-width: 575.98px) {
     html, body {
         color: red;
@@ -15,9 +16,29 @@
     .img-fluid {
         width: 100%;
     }
+
+    /* navbar  */
+    #drawer {
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        transform: translate(-550px, 0);
+        transition: transform 0.3s ease-in-out;
+        background-color: #111;
+    }
+
+    #drawer a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+    
+    
+    /* tutup navbar  */
+
 }
 
-/* small size  */
+/* --------------------------------- small size -----------------------  */
 @media (min-width: 576px) and (max-width: 767.98px) {
     html, body {
         color: blue;
@@ -32,8 +53,50 @@
     .img-fluid {
         width: 100%;
     }
+
+     /* navbar  */
+     #drawer {
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        transform: translate(-250px, 0);
+        transition: transform 0.3s ease-in-out;
+        background-color: #111;
+
+    }
+
+    #drawer.open {
+        transform: translate(0,0);
+    }
+
+    #drawer ul {
+        list-style-type: none;
+        padding: 0 16px;
+    }
+
+    #drawer li {
+        padding: 5px 0px;
+    }
+
+    #drawer a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+
+    /* button humburger */
+    #hamburger {
+        font-size: 32px;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* tutup navbar  */
+
 }
 
+
+/* ---------------------------- medium device -------------------------- */
 @media (min-width: 768px) and (max-width: 991.98px) {
     html, body {
         color: yellow;
@@ -48,5 +111,45 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 5%;
     }
+
+     /* ---------------------  navbar  ------------------------------*/
+     #drawer {
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        transform: translate(-250px, 0);
+        transition: transform 0.3s ease-in-out;
+        background-color: #111;
+
+    }
+
+    #drawer.open {
+        transform: translate(0,0);
+    }
+
+    #drawer ul {
+        list-style-type: none;
+        padding: 0 16px;
+    }
+
+    #drawer li {
+        padding: 5px 0px;
+    }
+
+    #drawer a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+
+    /* button humburger */
+    #hamburger {
+        font-size: 32px;
+        text-decoration: none;
+        color: black;
+    }
+
+    /*-----------------------  tutup navbar --------------------------*/
+
 }
 

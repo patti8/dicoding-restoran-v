@@ -9,44 +9,6 @@ html, body {
     padding: 0;
 }
 
-/* navbar  */
-#drawer {
-    width: 250px;
-    height: 100%;
-    position: absolute;
-    transform: translate(-250px, 0);
-    transition: transform 0.3s ease-in-out;
-    background-color: #111;
-
-}
-
-#drawer.open {
-    transform: translate(0,0);
-}
-
-#drawer ul {
-    list-style-type: none;
-    padding: 0 16px;
-}
-
-#drawer li {
-    padding: 5px 0px;
-}
-
-#drawer a {
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-}
-
-/* button humburger */
-#hamburger {
-    font-size: 32px;
-    text-decoration: none;
-    color: black;
-}
-
-/* tutup navbar  */
 
 .container{
     padding: 15%;
@@ -58,12 +20,46 @@ img {
     width: 100%;
 }
 
+.img-herro {
+    height: 100%;
+}
+
 .card {
     border: 3px solid black;
     padding: 10px;
     /* margin: 10px; */
 }
 
+/* navbar  */
+
+    .logo-brand {
+        font-weight: bold;
+    }
+
+    #drawer.open {
+        transform: translate(0,0);
+    }
+
+    #drawer ul {
+        list-style-type: none;
+        padding: 0 16px;
+    }
+
+    #drawer li {
+        padding: 5px 0px;
+    }
+
+    /* button humburger */
+    #hamburger {
+        /* top: 25px !important;
+        margin: 15px !important; */
+        padding: 10px;
+        font-size: 32px;
+        text-decoration: none;
+        color: black;
+    }
+
+/* tutup navbar  */
 
 /* large desktop  */
 /* @media (min-width: 992px) and (max-width: 119.98px) { */
@@ -78,9 +74,56 @@ img {
         /* grid-template-rows: 100px 100px; */
     }
 
+    .img-herro {
+        height: 90%;
+    }
+    
+    /* navbar  */
+    
+    .logo-brand {
+        font-weight: bold;
+        margin-right: 30px;
+        font-size: larger;
+        text-decoration: underline !important;
+    }
+    
     #hamburger {
         display: none;
     }
+
+    #drawer {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        transform: translate(0,0) !important;
+        transition: none;
+    }
+    
+    nav {
+        padding: 15px;
+        background-color: black;
+    }
+
+    .nav-list {
+        width: 60%;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .nav-item {
+        display: inline-block;
+        text-align: right;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    #drawer a{
+        text-decoration: none;
+        color: white;
+    }
+    /* tutup navbar  */
 
 }
     
@@ -97,57 +140,47 @@ img {
         /* grid-template-rows: 100px 100px; */
     }
 
+    .img-herro {
+        height: 20% !important;
+    }
+    
+
+    /* navbar  */
+    .logo-brand {
+        font-weight: bold;
+        margin-right: 30px;
+        font-size: larger;
+        text-decoration: underline !important;
+    }
+
     #hamburger {
         display: none;
     }
+    
+    nav {
+        padding: 15px;
+        background-color: black;
+    }
 
-    /* navbar  */
-    #drawer {
+    .nav-list {
+        width: 60%;
         padding: 0;
-        width: 100%;
-        height: 150px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .nav-item {
         display: inline-block;
-        float: left;
-        clear: left;
-        transform: translate(-250px, 0);
-        /*position: absolute;
-        transition: transform 0.3s ease-in-out; */
-        transform: translate(0,0);
-        background-color: #111;
-       
-
-    }
-/* 
-    #drawer.open {
-        transform: translate(0,0);
-    } */
-
-    #drawer ul {
-        list-style-type: none;
-        padding: 0 0;
-        /* float: left;
-        clear: left; */
-    }
-
-    #drawer li {
-        padding: 0 0px;
-
-        
-    }
-
-    #drawer a {
+        text-align: right;
+        line-height: 24px;
+        text-transform: uppercase;
         text-decoration: none;
-        font-size: 25px;
+    }
+
+    #drawer a{
+        text-decoration: none;
         color: white;
     }
-
-    /* button humburger */
-    #hamburger {
-        font-size: 32px;
-        text-decoration: none;
-        color: black;
-    }
-
     /* tutup navbar  */
 
 }
